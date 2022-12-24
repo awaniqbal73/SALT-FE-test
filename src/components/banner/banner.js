@@ -1,10 +1,6 @@
 import React from 'react'
 import Banner from '../../asset/banner.jpg'
-import Back from '../../asset/backbanner.svg'
-import Up from '../../asset/upbanner.svg'
-import Before from '../../asset/bg-before.svg'
 import Scroll from '../../asset/scroll.svg'
-// import Banneroverlay '../../asset/banneroverlay.svg'
 import './banner.scss'
 
 export default function Header() {
