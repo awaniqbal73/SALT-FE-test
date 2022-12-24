@@ -1,0 +1,204 @@
+.banner {
+    position: relative;
+
+    .banner-size {
+        height: 600px;
+        width: 100%;
+        object-fit: cover;
+        z-index: -2;
+
+        @media(max-width:768px) {
+            height: 500px;
+        }
+    }
+
+    .overlay {
+        background-color: #4097db;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40%;
+        padding: 20px;
+        height: 100%;
+
+        @media(max-width:768px) {
+            position: relative;
+            width: 100%;
+            height: 300px;
+        }
+
+        &:before {
+            content: url(../../asset/banneroverlay.svg);
+            width: 600px;
+            height: 100%;
+            left: -100px;
+            top: 0;
+            position: absolute;
+            transform: rotate(-90deg);
+
+            @media(max-width:768px) {
+                transform: rotate(0deg);
+                width: 100%;
+                height: 600px;
+                overflow: hidden;
+                position: absolute;
+                top: -120px;
+                left: 0;
+                //      z-index: -1;
+            }
+
+            @media(max-width:768px) {
+                top: -100px;
+            }
+        }
+
+        .box-title-thumb {
+            @media(min-width:769px){
+                margin-top: 20%;
+            }
+            .title {
+                position: absolute;
+                z-index: 99;
+                display: block;
+                overflow: hidden;
+            }
+        }
+    }
+
+
+}
+
+.center {
+    position: relative;
+    display: flex;
+    margin-top: -15px;
+
+    a {
+        margin: auto auto;
+    }
+}
+
+// .banner{
+//     position: relative;
+//     height: auto;
+//     @media (max-width:768px){
+//         height: 850px;
+//     }
+//     .banner-size{
+//         width: 90%;
+//         height: 750px;
+//         object-fit: cover;
+//         @media (max-width:768px){
+//             width: 100%;
+//         }
+//     }
+//     .overlay{
+//         position: absolute;
+//         right: 0;
+//         top:0px;
+//         height: 750px;
+//         width: 800px;
+//         display: block;
+//         @media (max-width:768px){
+//             top:50vh;
+//             width: 100%;
+//             height: 750px;
+//             right: auto;
+//         }
+//         .triagle-up{
+//             width: 130%;
+//             height: 750px;
+//             transform: skew(10deg);
+//             background: #53A7E9;
+//             top:0;
+//             position: absolute;
+
+//         @media (max-width:768px){
+//             display: none;
+//         }
+//         }
+//         .triagle-back{
+//             width: 140%;
+//             height: 750px;
+//             transform: skew(-20deg);
+//             background: #4097DB;
+//             position: absolute;
+//             @media (max-width:768px){
+//                 display: none;
+//             }
+//         }
+//         .upbanner{
+//             display: none;
+//             @media (max-width:768px){
+//                 display: block;
+//                 width: 100%;
+//                 top:0;
+//                 position: absolute;
+//             }
+//         }
+//         .backbanner{
+//             display: none;
+//             @media (max-width:768px){
+//                 display: block;
+//                 width: 100%;
+//             }
+//         }
+//         .box-svg-mobile{
+//             position: absolute;
+//             right: 0;
+//             @media (max-width:768px){
+//             display: none;
+//             }
+//             img{
+//                 width: 100%;
+
+//         height: 750px;
+//             }
+//         }
+//     }
+//     .title{
+//         position: absolute;
+//         top:25vh;
+//         right: 60px;
+//         z-index: 99;
+//         width: 450px;
+//         background: #4097db;
+//         @media (max-width:1440px){
+//             width: 300px;
+//         }
+//         @media (max-width:768px){
+//             width: 100%;
+//             right: 0;
+//             top: 150px;
+//             padding: 20px;
+//             height: 350px;
+//             display: block;
+//             overflow: hidden;
+//         }
+//         h1{
+//             color:#fff;
+//             font-size: 4rem;
+//             @media (max-width:1440px){
+//                 font-size: 3rem;
+//             }
+//             @media (max-width:768px){
+//                 font-size: 3rem;
+//             }
+//         }
+//         p{
+//             color:#fff;
+//             font-size:1.2rem;
+//             @media (max-width:768px){
+//                 font-size: 1rem;
+//             }
+//         }
+//     }
+// }
+// .center{
+//     position: relative;
+//     bottom: 62px;
+//     z-index: 99;
+//     display: block;
+//     text-align: center;
+// }

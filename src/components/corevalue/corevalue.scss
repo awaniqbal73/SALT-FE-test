@@ -1,0 +1,60 @@
+.core-values{
+    background-color: #F8F8F8;
+    padding: 30px 0;
+    position: relative;
+    .box-item-core{
+        @media (min-width:768px){
+            width: 80%;
+            padding: 3rem;;
+        }
+        h1{
+            font-size:36px;
+            color:#029FE4;
+            font-weight: bold;
+        }
+        p{
+            color:#777;
+            font-size:16px;
+        }
+    }
+    .box-list{
+        list-style-type:none ;
+        margin-left: 10px;
+        @media(min-width:769px){
+            width: 80%;
+        }
+        h1{
+            color:#000;
+            position: relative;
+            font-weight: 400;
+            &:before{
+                content:url('../../asset/strip.svg');
+                position: absolute;
+                left: -40px;
+                top:-5px;
+            }
+        }
+        .p-list{
+            color:#000;
+            padding: 10px 0;
+            font-size:16px;
+            margin-bottom: 15px;
+        }
+    }
+    .box-core-img{
+        position: relative;
+        @media (min-width:768px){
+            position: initial;
+        }
+        img{
+            float:right;
+            max-width: 300px;
+            @media (min-width:768px){
+                max-width: 40%;
+                position: absolute;
+                bottom:0px;
+                right: 0px;
+            }
+        }
+    }
+}

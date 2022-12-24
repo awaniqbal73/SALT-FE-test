@@ -1,0 +1,77 @@
+.slick-who{
+    margin: 3rem 0;
+    @media (min-width:768px){
+        width: 500px;
+        margin: auto;
+        margin-bottom: 100px;
+        margin-top: 80px;
+    }
+    .box-slick{
+        background: #fff;
+        padding: 10px;
+        h1{
+            color:#029FE4;
+            font-weight: bold;
+            font-size:2rem;
+            margin-bottom: 1rem;
+        }
+        h3{
+            color:#000;
+            font-size:1.2rem;
+        }
+        p{
+            color:#777777;
+        }
+    }
+    .slick-arrow{
+        position: absolute;
+        bottom: -110px;
+        right: 0;
+        top: auto;
+        background-color: #029FE4;
+        height: 35px;
+    width: 35px;
+        &.slick-next{
+            left: auto;
+            &:before{
+                font-family: auto;
+                color:#FFF;
+            }
+            &:hover{
+                background-color: #029FE4;
+            }
+            }
+        &.slick-prev{
+            right:45px;
+            left: auto;
+            background-color: #F1F1F1;
+            &:before{
+                font-family: auto;
+                color:#B6B6B6;
+            }
+            &:hover{
+                background-color: #F1F1F1;
+            }
+        }
+        
+    }
+    .index-number{
+        margin-top: 50px;
+        .number-stong{
+            font-size:1.5rem;
+            font-weight: 550;
+            color: #000;
+        }
+        .miring{
+            font-size:1.5rem;
+            font-weight: 550;
+            color:#C0C0C0;
+        }
+        span{
+            color:#C0C0C0;
+            padding: 2px;
+        }
+    }
+  
+}
+

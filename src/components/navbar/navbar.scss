@@ -1,0 +1,90 @@
+.fixed{
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    background-color: #fff;
+    height: 80px;
+    transition: .5s;
+    overflow: hidden;
+}
+.no-fixed{
+    position: relative;
+    padding:10px;
+}
+.navbar{ 
+	position: fixed;
+    padding: 20px 0px;
+        .box-navigation {
+		position: relative; 
+		display: block ;
+		width: 100% ;
+            }
+        .App-logo{ 
+			width: 200px;
+            
+        }
+        .logo-mobile{
+            display: none;
+            @media(max-width:768px){
+                display: block;
+                padding: 23px 20px;
+                border-bottom: 1px solid #fff;
+            }
+        }
+        .burger {
+			display: none;
+            @media (max-width:768px){
+                display: block;
+                width: 30px;
+                position: absolute;
+                right: 0;
+                top:10px;
+            }
+        }
+        .navigation-menu{ 
+			position: absolute ;
+			right: 0 ;
+			top: 10px ;
+            
+            @media (max-width:768px){
+                position: fixed;
+                width: 320px;
+                height: 100vh;
+                left: -400px;
+                top:0;
+                background: #4097DB;
+                z-index: 9999;
+                transition: 1s;
+                @media (max-width:375px){
+                    width: 250px;
+                }
+                ul{
+                    padding-top:30px;
+                    li{
+                        display: block;
+                        color:#fff;
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+            &.expanded{
+                @media (max-width:768px){
+                    left: 0;
+                }
+            }
+        }
+        ul{
+            display: block;
+            padding-inline-start:0;
+        }
+        li{
+			display: inline-block;
+			cursor: pointer;
+            font-size:18px;
+            padding-left: 20px;
+            font-weight: 500;
+            &:hover{
+                color:#4097DB;
+            }
+        }
+}
